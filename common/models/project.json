@@ -41,6 +41,13 @@
       "principalId": "admin",
       "permission": "ALLOW",
       "property": "find"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "teamMember",
+      "permission": "ALLOW",
+      "property": "findById"
     }
   ],
   "methods": []
