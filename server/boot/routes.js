@@ -1,8 +1,6 @@
 module.exports = function(app) {
   var router = app.loopback.Router();
 
-  console.error('##asgasgoinagoiasngoiasngogni\n\n\n####asfgaoisfnasofin');
-
   router.get('/', function(req, res) {
     res.render('index', {
       loginFailed: false

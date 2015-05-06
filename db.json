@@ -3,45 +3,35 @@
     "User": 1,
     "AccessToken": 1,
     "ACL": 1,
-    "RoleMapping": 3,
-    "Role": 3,
-    "user": 7,
-    "team": 7,
-    "project": 5
+    "RoleMapping": 2,
+    "Role": 2,
+    "user": 4,
+    "team": 4,
+    "project": 3
   },
   "models": {
     "User": {},
     "AccessToken": {},
     "ACL": {},
     "RoleMapping": {
-      "1": "{\"principalType\":\"USER\",\"principalId\":\"3\",\"roleId\":1,\"id\":1}",
-      "2": "{\"principalType\":\"USER\",\"principalId\":\"6\",\"roleId\":2,\"id\":2}"
+      "1": "{\"principalType\":\"USER\",\"principalId\":\"3\",\"roleId\":1,\"id\":1}"
     },
     "Role": {
-      "1": "{\"name\":\"admin\",\"created\":\"2015-05-06T05:29:18.119Z\",\"modified\":\"2015-05-06T05:29:18.119Z\",\"id\":1}",
-      "2": "{\"name\":\"admin\",\"created\":\"2015-05-06T05:29:18.121Z\",\"modified\":\"2015-05-06T05:29:18.121Z\",\"id\":2}"
+      "1": "{\"name\":\"admin\",\"created\":\"2015-05-06T05:50:04.973Z\",\"modified\":\"2015-05-06T05:50:04.973Z\",\"id\":1}"
     },
     "user": {
-      "1": "{\"username\":\"John\",\"password\":\"$2a$10$qrKxA.Z3CmpNTBW4G9q9BuzmPLcBlO4R4nF.NLsTjGKzdLozL.Y5W\",\"email\":\"john@doe.com\",\"id\":1}",
-      "2": "{\"username\":\"Jane\",\"password\":\"$2a$10$82ESZCPe5/f2WeoIxShi0.OpU1LJlWNBmGBWwKhEiZ4fXZkEtUebq\",\"email\":\"jane@doe.com\",\"id\":2}",
-      "3": "{\"username\":\"Bob\",\"password\":\"$2a$10$uBELQBf1WCmzXC6OkLwm/OHQtSp3cnFgse0c1V.zjIGLsZCdDvYjy\",\"email\":\"bob@projects.com\",\"id\":3}",
-      "4": "{\"username\":\"John\",\"password\":\"$2a$10$sj8MBh.XKBLvHec.fyBNHejTL1Gm/MJc/nAsjpWVnVdnBL4RurGVm\",\"email\":\"john@doe.com\",\"id\":4}",
-      "5": "{\"username\":\"Jane\",\"password\":\"$2a$10$F92oeNFdYbZ64LAh140fxePXVudBcot9k0EEQeGEsbNBrg0Txlc0e\",\"email\":\"jane@doe.com\",\"id\":5}",
-      "6": "{\"username\":\"Bob\",\"password\":\"$2a$10$BpPo/yF6A9sEtAclS5j42OzxQP3ChNBhjpSxBn0D42dXJb28icUoy\",\"email\":\"bob@projects.com\",\"id\":6}"
+      "1": "{\"username\":\"John\",\"password\":\"$2a$10$gZ6XqSD1dHps3Rbnn23KgeMUSSvvkf5jNmmrlhBv6WfZfzoQ21qDu\",\"email\":\"john@doe.com\",\"id\":1}",
+      "2": "{\"username\":\"Jane\",\"password\":\"$2a$10$gxQN.nYHOCkszqcvq/TQIuQFmoyHSHJC2Y/Klho9yIgNBV17IHos6\",\"email\":\"jane@doe.com\",\"id\":2}",
+      "3": "{\"username\":\"Bob\",\"password\":\"$2a$10$97.QLsPcknV5PMdfM7LmvuCnffqUFh1k0pgzGqdXYhnetPePKnKfm\",\"email\":\"bob@projects.com\",\"id\":3}"
     },
     "team": {
       "1": "{\"ownerId\":1,\"memberId\":1,\"id\":1}",
       "2": "{\"ownerId\":1,\"memberId\":2,\"id\":2}",
-      "3": "{\"ownerId\":2,\"memberId\":2,\"id\":3}",
-      "4": "{\"ownerId\":4,\"memberId\":4,\"id\":4}",
-      "5": "{\"ownerId\":4,\"memberId\":5,\"id\":5}",
-      "6": "{\"ownerId\":5,\"memberId\":5,\"id\":6}"
+      "3": "{\"ownerId\":2,\"memberId\":2,\"id\":3}"
     },
     "project": {
       "1": "{\"name\":\"project1\",\"balance\":100,\"ownerId\":1,\"id\":1}",
-      "2": "{\"name\":\"project2\",\"balance\":100,\"ownerId\":2,\"id\":2}",
-      "3": "{\"name\":\"project1\",\"balance\":100,\"ownerId\":4,\"id\":3}",
-      "4": "{\"name\":\"project2\",\"balance\":100,\"ownerId\":5,\"id\":4}"
+      "2": "{\"name\":\"project2\",\"balance\":100,\"ownerId\":2,\"id\":2}"
     }
   }
 }
