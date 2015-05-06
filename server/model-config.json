@@ -29,5 +29,9 @@
   "user": {
     "dataSource": "db",
     "public": true
+  },
+  "team": {
+    "dataSource": "db",
+    "public": false
   }
 }
