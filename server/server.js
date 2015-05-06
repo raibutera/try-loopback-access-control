@@ -2,10 +2,13 @@ var loopback = require('loopback');
 var boot = require('loopback-boot');
 var path = require('path');
 var bodyParser = require('body-parser');
+var morgan = require('morgan');
+var logger = morgan('dev');
 
 var app = module.exports = loopback();
 
 app.middleware('initial', bodyParser.urlencoded({ extended: true }));
+app.use(logger);
 
 boot(app, __dirname);
 
