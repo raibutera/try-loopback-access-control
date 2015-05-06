@@ -48,6 +48,13 @@
       "principalId": "teamMember",
       "permission": "ALLOW",
       "property": "findById"
+    },
+    {
+      "accessType": "EXECUTE",
+      "principalType": "ROLE",
+      "principalId": "$authenticated",
+      "permission": "ALLOW",
+      "property": "donate"
     }
   ],
   "methods": []
