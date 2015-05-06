@@ -1,0 +1,47 @@
+{
+  "ids": {
+    "User": 1,
+    "AccessToken": 1,
+    "ACL": 1,
+    "RoleMapping": 3,
+    "Role": 3,
+    "user": 7,
+    "team": 7,
+    "project": 5
+  },
+  "models": {
+    "User": {},
+    "AccessToken": {},
+    "ACL": {},
+    "RoleMapping": {
+      "1": "{\"principalType\":\"USER\",\"principalId\":\"3\",\"roleId\":1,\"id\":1}",
+      "2": "{\"principalType\":\"USER\",\"principalId\":\"6\",\"roleId\":2,\"id\":2}"
+    },
+    "Role": {
+      "1": "{\"name\":\"admin\",\"created\":\"2015-05-06T05:23:26.073Z\",\"modified\":\"2015-05-06T05:23:26.073Z\",\"id\":1}",
+      "2": "{\"name\":\"admin\",\"created\":\"2015-05-06T05:23:26.075Z\",\"modified\":\"2015-05-06T05:23:26.075Z\",\"id\":2}"
+    },
+    "user": {
+      "1": "{\"username\":\"John\",\"password\":\"$2a$10$.yiauf4iQaxReCjkKvX9ueyOC/veyfRusMeTA8d6E2zSO/eZFdthq\",\"email\":\"john@doe.com\",\"id\":1}",
+      "2": "{\"username\":\"Jane\",\"password\":\"$2a$10$wVMkVLFQeInQIr6ZKnVsw.ifN/adoHcYTf7Q7LiBpX26aE8ydIPYO\",\"email\":\"jane@doe.com\",\"id\":2}",
+      "3": "{\"username\":\"Bob\",\"password\":\"$2a$10$Y9WF.CNos82Y9ppVYab7ruEpgAc0XstlGO1GAlS3Qp/aTTp3H1n4u\",\"email\":\"bob@projects.com\",\"id\":3}",
+      "4": "{\"username\":\"John\",\"password\":\"$2a$10$UzaXDlmUq5PA1O3dknPDlOND/CvRc7/l/wW26LBXeUrwEyq5bdK0.\",\"email\":\"john@doe.com\",\"id\":4}",
+      "5": "{\"username\":\"Jane\",\"password\":\"$2a$10$Cf3P2GbJ0WnQPTi4BCQGc.P3meSi/IW3MpdPEBRA6XMjNq7HguEKy\",\"email\":\"jane@doe.com\",\"id\":5}",
+      "6": "{\"username\":\"Bob\",\"password\":\"$2a$10$cpJZzwn7/8INhE9yvk7odOC97Rxf9BxCpMD3HNjr95GO2/wTLOMHi\",\"email\":\"bob@projects.com\",\"id\":6}"
+    },
+    "team": {
+      "1": "{\"ownerId\":1,\"memberId\":1,\"id\":1}",
+      "2": "{\"ownerId\":1,\"memberId\":2,\"id\":2}",
+      "3": "{\"ownerId\":2,\"memberId\":2,\"id\":3}",
+      "4": "{\"ownerId\":4,\"memberId\":4,\"id\":4}",
+      "5": "{\"ownerId\":4,\"memberId\":5,\"id\":5}",
+      "6": "{\"ownerId\":5,\"memberId\":5,\"id\":6}"
+    },
+    "project": {
+      "1": "{\"name\":\"project1\",\"balance\":100,\"ownerId\":1,\"id\":1}",
+      "2": "{\"name\":\"project2\",\"balance\":100,\"ownerId\":2,\"id\":2}",
+      "3": "{\"name\":\"project1\",\"balance\":100,\"ownerId\":4,\"id\":3}",
+      "4": "{\"name\":\"project2\",\"balance\":100,\"ownerId\":5,\"id\":4}"
+    }
+  }
+}

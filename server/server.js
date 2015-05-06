@@ -5,13 +5,18 @@ var bodyParser = require('body-parser');
 
 var app = module.exports = loopback();
 
-app.start = function() {
-  // start the web server
-  return app.listen(function() {
-    app.emit('started');
-    console.log('Web server listening at: %s', app.get('url'));
-  });
+app.middleware('initial', bodyParser.urlencoded({ extended: true }));
+
+boot(app, __dirname);
+
+app.start = function () {
+    // start the web server
+    return app.listen(function () {
+        app.emit('started');
+        console.log('Web server listening at: %s', app.get('url'));
+    });
 };
+
 
 app.set('view engine', 'ejs');
 app.set('json spaces', 2);
@@ -22,10 +27,12 @@ app.set('views', path.resolve(__dirname, 'views'));
 
 // Bootstrap the application, configure models, datasources and middleware.
 // Sub-apps like REST API are mounted via boot scripts.
-boot(app, __dirname, function(err) {
-  if (err) throw err;
-
-  // start the server if `$ node server.js`
-  if (require.main === module)
-    app.start();
+boot(app, __dirname, function (err) {
+    if (err) throw err;
 });
+
+// start the server if `$ node server.js`
+if (require.main === module) {
+    console.log('booting manually?');
+    app.start();
+}
